@@ -5,7 +5,7 @@ export default function App (){
   const [fullName, setFullName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [phoneNumber, setPhoneNumber] = useState<string>('')
-  const [serviceId, setServiceId] = useState<string>('')
+  const [_serviceId, setServiceId] = useState<string>('')
   const [appointedAt, setAppointedAt] = useState<string>('')
 
   const handleSubmit = async () =>{
