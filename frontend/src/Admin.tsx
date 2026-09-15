@@ -19,7 +19,7 @@ export default function Admin(){
         .order('appointed_at', {ascending: false})
 
         if(error) {console.error(error); return}
-        if(data) setBookings(data as Booking[])
+        if(data) setBookings(data as unknown as Booking[])
     }
     const updateStatus = async (id: string, status: string) => {
         await supabase.from('bookings').update({ status }).eq('id', id)
