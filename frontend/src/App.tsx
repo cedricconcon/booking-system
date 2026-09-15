@@ -15,7 +15,7 @@ export default function App (){
   const [appointedAt, setAppointedAt] = useState<string>('')
   const [services, setServices] = useState<Services[]>([])
   const [isSuccess, setIsSuccess] = useState<boolean>(false)
-
+  
   const handleSubmit = async () =>{
     const {data: client, error: clientError} = await supabase
     .from('clients')
